@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Alfa_Slab_One, Inter, Roboto, Work_Sans } from "next/font/google";
+import { VoiceflowChat } from "@/components/VoiceflowChat";
 import "./globals.css";
 
 const inter = Inter({
@@ -46,7 +47,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${workSans.variable} ${alfaSlabOne.variable} ${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <VoiceflowChat />
+      </body>
     </html>
   );
 }

@@ -17,7 +17,7 @@ declare global {
 }
 
 const WIDGET_ID = "voiceflow-chat-widget";
-const PROJECT_ID = "6b027c648d6006f65a0d481e";
+const PROJECT_ID = "6b027c648d6006f65a0d481d";
 
 function loadChat() {
   window.voiceflow?.chat?.load({

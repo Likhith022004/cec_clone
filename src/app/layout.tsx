@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Alfa_Slab_One, Inter, Roboto, Work_Sans } from "next/font/google";
+import { Web3FormsContact } from "@/components/Web3FormsContact";
 import { VoiceflowChat } from "@/components/VoiceflowChat";
 import "./globals.css";
 
@@ -45,10 +46,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${workSans.variable} ${alfaSlabOne.variable} ${roboto.variable} h-full antialiased`}
+      className={`${inter.variable} ${workSans.variable} ${alfaSlabOne.variable} ${roboto.variable} h-full antialiased`
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <Web3FormsContact />
         <VoiceflowChat />
       </body>
     </html>

@@ -1,7 +1,7 @@
 .card {
   position: fixed;
   right: 22px;
-  bottom: 88px;
+  bottom: 142px;
   z-index: 900;
   width: min(326px, calc(100vw - 32px));
   overflow: hidden;
@@ -12,10 +12,57 @@
   color: #28283f;
 }
 
+.launcher {
+  position: fixed;
+  right: 22px;
+  bottom: 88px;
+  z-index: 900;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: #25ad5f;
+  box-shadow: 0 8px 22px rgba(13, 13, 37, 0.22);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.launcher:hover,
+.launcher:focus-visible {
+  background: #197b43;
+}
+
 .heading {
   padding: 16px 18px 13px;
   background: linear-gradient(135deg, #1f9d55, #436c5e);
   color: #fff;
+}
+
+.headingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.close {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus-visible {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .kicker {
@@ -109,7 +156,12 @@
 @media (max-width: 640px) {
   .card {
     right: 12px;
-    bottom: 84px;
+    bottom: 138px;
     width: min(332px, calc(100vw - 24px));
+  }
+
+  .launcher {
+    right: 12px;
+    bottom: 84px;
   }
 }

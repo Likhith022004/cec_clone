@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${workSans.variable} ${alfaSlabOne.variable} ${roboto.variable} h-full antialiased`
+      className={`${inter.variable} ${workSans.variable} ${alfaSlabOne.variable} ${roboto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}
